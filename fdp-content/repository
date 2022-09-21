@@ -1,0 +1,41 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository> a dcat:Resource, dcat:DataService, <https://w3id.org/fdp/fdp-o#MetadataService>,
+    <https://w3id.org/fdp/fdp-o#FAIRDataPoint>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Github demonstration FAIR Data Point";
+  dcterms:title "Github demonstration FAIR Data Point";
+  dcterms:hasVersion "1.0";
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
+  dcterms:description "FAIR Data Point to demonstrate FDP specs can be implemented with Github and Github actions .";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <http://www.re3data.org/schema/3-0#repositoryIdentifier> <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#identifier>;
+  dcterms:accessRights <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#accessRights>;
+  dcterms:publisher <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#publisher>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2022-06-03T15:02:12.990593758Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-21T14:26:24.588083202Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#identifier>;
+  dcat:endpointURL <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository>;
+  <https://w3id.org/fdp/fdp-o#fdpSoftwareVersion> "FDP:v1.13.2~aa85310", "FDP:v1.13.2~aa85310";
+  <https://w3id.org/fdp/fdp-o#metadataCatalog> <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/catalog>.
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository" .
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#accessRights> a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository#publisher> a foaf:Agent;
+  foaf:name "Rajaram Kaliyaperumal" .
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
+  dcterms:title "Catalogs", "Catalogs";
+  ldp:hasMemberRelation <https://w3id.org/fdp/fdp-o#metadataCatalog>, <https://w3id.org/fdp/fdp-o#metadataCatalog>;
+  ldp:membershipResource <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository>;
+  ldp:contains <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/catalog>.
+
+<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> <http://www.w3.org/2000/01/rdf-schema#label>
+    "FAIR Data Point Profile", "FAIR Data Point Profile" .
