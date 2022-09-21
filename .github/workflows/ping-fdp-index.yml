@@ -1,0 +1,33 @@
+name: Ping FDP index
+on:
+  # allow workflow to run manually
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout cde model repository
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      # List files
+      - name: List repo content
+        run: ls
+      # install python
+      - name: Install python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      # install python dependencies
+      - name: Install dependency
+        uses: py-actions/py-dependency-install@v2
+        with:
+          path: "script/requirements.txt"
+      # run script
+      - name: Ping FDP index
+        id: ping-index
+        working-directory: ./script
+        env:
+          FDP_INDEX_URL: "http://178.63.49.197:8070"
+          FDP_URL: "https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/repository"
+        run: 'python main.py'      
