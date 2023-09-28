@@ -10,15 +10,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <> a dcat:Resource,
     dcat:Dataset;
-  rdfs:label "Duchenne Data Platform";
-  dcterms:title "Duchenne Data Platform";
+  rdfs:label "rajaramz-fdp dataset";
+  dcterms:title "rajaramz-fdp dataset";
   dcterms:hasVersion "1";
   dcterms:license <https://raw.githubusercontent.com/creativecommons/cc.licenserdf/master/cc/licenserdf/licenses/creativecommons.org_publicdomain_zero_1.0_.rdf>;
-  dcterms:description "The Duchenne Data Platform (DDP) is a patient-led registry. Patients are the owners of their data and have their own â€˜data lockersâ€™ where they can not only collect their Patient Reported Outcomes (PROs) but can also upload their data from other sources such as hospitals and wearables.";
+  dcterms:description "rajaramz-fdp dataset document";
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
   dcterms:accessRights <dataset#accessRights>;
   dcterms:publisher [ a foaf:Agent;
-      foaf:name "Rajaram Kaliyaperumal";
+      foaf:name "Rajaram", "ericP";
       foaf:logo <https://www.duchennenoord.nl/wp-content/uploads/2018/03/duchenne1-285x160.jpg>
     ];
   dcterms:isPartOf <catalog>;

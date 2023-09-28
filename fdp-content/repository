@@ -9,8 +9,8 @@ PREFIX r3d: <http://www.re3data.org/schema/3-0#>
 PREFIX datacite: <http://purl.org/spar/datacite/>
 
 <> a dcat:Resource, dcat:DataService, fdp-o:MetadataService, fdp-o:FAIRDataPoint;
-  rdfs:label "Github demonstration FAIR Data Point";
-  dcterms:title "Github demonstration FAIR Data Point";
+  rdfs:label "rajaramz-fdp FAIR Data Point";
+  dcterms:title "rajaramz-fdp FAIR Data Point";
   dcterms:hasVersion "1.0";
   dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
   dcterms:description "FAIR Data Point to demonstrate FDP specs can be implemented with Github and Github actions .";
@@ -32,7 +32,7 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   dcterms:description "This resource has no access restriction" .
 
 <repository#publisher> a foaf:Agent;
-  foaf:name "Rajaram Kaliyaperumal" .
+  foaf:name "Rajaram Kaliyaperumal", "Eric Prud'hommeaux" .
 
 <repository/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
   dcterms:title "Catalogs";
@@ -40,6 +40,6 @@ PREFIX datacite: <http://purl.org/spar/datacite/>
   ldp:membershipResource <>;
   ldp:contains <catalog>.
 
-# Seemed to be a mistake
+# Subject seemed to be a mistake
 #<repository/profile/77aaad6a-0136-4c6e-88b9-07ffccd0ee4c> rdfs:label
 #    "FAIR Data Point Profile", "FAIR Data Point Profile" .
