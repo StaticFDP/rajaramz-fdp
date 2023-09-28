@@ -1,6 +1,6 @@
 name: Ping FDP index
 on:
-  # allow workflow to run manually
+  # Run workflow from ⏵ Actions menu at top of repo directory
   workflow_dispatch:
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
           ref: ${{ github.head_ref }}
       # List files
       - name: List repo content
-        run: ls
+        run: tree -hFtC --dirsfirst
       # run script
       - name: Ping FDP index
         id: ping-index
