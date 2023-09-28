@@ -1,37 +1,40 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ldp: <http://www.w3.org/ns/ldp#> .
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ldp: <http://www.w3.org/ns/ldp#>
+PREFIX fdp-o: <https://w3id.org/fdp/fdp-o#>
+PREFIX ORDO: <http://www.orpha.net/ORDO/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-
-<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset> a dcat:Resource,
+<> a dcat:Resource,
     dcat:Dataset;
-  <http://www.w3.org/2000/01/rdf-schema#label> "Duchenne Data Platform";
+  rdfs:label "Duchenne Data Platform";
   dcterms:title "Duchenne Data Platform";
   dcterms:hasVersion "1";
   dcterms:license <https://raw.githubusercontent.com/creativecommons/cc.licenserdf/master/cc/licenserdf/licenses/creativecommons.org_publicdomain_zero_1.0_.rdf>;
   dcterms:description "The Duchenne Data Platform (DDP) is a patient-led registry. Patients are the owners of their data and have their own â€˜data lockersâ€™ where they can not only collect their Patient Reported Outcomes (PROs) but can also upload their data from other sources such as hospitals and wearables.";
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
-  dcterms:accessRights <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset#accessRights>;
+  dcterms:accessRights <dataset#accessRights>;
   dcterms:publisher [ a foaf:Agent;
       foaf:name "Rajaram Kaliyaperumal";
       foaf:logo <https://www.duchennenoord.nl/wp-content/uploads/2018/03/duchenne1-285x160.jpg>
     ];
-  dcterms:isPartOf <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/catalog>;
+  dcterms:isPartOf <catalog>;
   dcat:keyword "Becker Muscular Dystrophy", "Clinical data", "Duchenne Muscular Dystrophy",
     "Genetic data", "PROMs", "PROs";
-  dcat:theme <http://purl.obolibrary.org/obo/NCIT_C47846>, <http://purl.obolibrary.org/obo/HP_0000708>,
-    <http://purl.obolibrary.org/obo/HP_0000750>, <http://www.orpha.net/ORDO/Orphanet_98895>,
-    <http://www.orpha.net/ORDO/Orphanet_98896>, <http://purl.org/ejp-rd/vocabulary/VPDiscoverable>;
-  <https://w3id.org/fdp/fdp-o#metadataIssued> "2022-08-31T08:55:58.863415745Z"^^xsd:dateTime;
-  <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-21T14:25:59.622502843Z"^^xsd:dateTime;
-  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset#identifier> .
+  dcat:theme obo:NCIT_C47846, obo:HP_0000708,
+    obo:HP_0000750, ORDO:Orphanet_98895,
+    ORDO:Orphanet_98896, <http://purl.org/ejp-rd/vocabulary/VPDiscoverable>;
+  fdp-o:metadataIssued "2022-08-31T08:55:58.863415745Z"^^xsd:dateTime;
+  fdp-o:metadataModified "2022-09-21T14:25:59.622502843Z"^^xsd:dateTime;
+  fdp-o:metadataIdentifier <dataset#identifier> .
 
-<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset#identifier>
+<dataset#identifier>
   a <http://purl.org/spar/datacite/Identifier>;
-  dcterms:identifier "https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset" .
+  dcterms:identifier "dataset" .
 
-<https://raw.githubusercontent.com/rajaram5/my-fdp/main/fdp-content/dataset#accessRights>
+<dataset#accessRights>
   a dcterms:RightsStatement;
   dcterms:description "This resource has no access restriction" .
