@@ -40,4 +40,4 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
   dcterms:title "Datasets";
   ldp:membershipResource <>;
   ldp:hasMemberRelation dcat:dataset;
-  ldp:contains <dataset>.
+  ldp:contains <dataset-abc>.
