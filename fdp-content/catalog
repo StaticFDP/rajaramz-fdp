@@ -18,7 +18,7 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
   dcterms:accessRights <catalog#accessRights>;
   dcterms:publisher [ a foaf:Agent; foaf:name "Rajaram Kaliyaperumal" ];
   dcterms:isPartOf <repository>;
-  dcat:dataset <dataset>;
+  dcat:dataset <dataset-abc>;
   fdp-o:metadataIssued "2022-08-31T08:52:02.797608391Z"^^xsd:dateTime;
   fdp-o:metadataModified "2022-09-21T14:25:59.866785798Z"^^xsd:dateTime;
   fdp-o:metadataIdentifier <catalog#identifier>;
