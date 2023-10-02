@@ -22,7 +22,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       foaf:logo <https://www.duchennenoord.nl/wp-content/uploads/2018/03/duchenne1-285x160.jpg>
     ];
   dcterms:isPartOf <catalog>;
-  dcat:keyword "dsalpha", "dsbravo", "dscharlie";
+  dcat:keyword "dsalphab", "dsbravob", "dscharlieb";
   dcat:theme obo:NCIT_C47846, obo:HP_0000708,
     obo:HP_0000750, ORDO:Orphanet_98895,
     ORDO:Orphanet_98896, <http://purl.org/ejp-rd/vocabulary/VPDiscoverable>;
